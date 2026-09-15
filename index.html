@@ -544,58 +544,136 @@
         </p>
 </div>
 <!-- Formulario RSVP -->
-<form class="bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-8 backdrop-blur-md space-y-5" id="rsvpForm" onsubmit="handleRSVP(event)">
-<div>
-<label class="block text-[11px] uppercase tracking-widest text-wedding-bone/80 mb-2 font-medium">Nombre Completo *</label>
-<input class="w-full bg-black/30 border border-white/20 rounded-xl px-4 py-3 text-xs text-wedding-bone placeholder-wedding-bone/30 focus:outline-none focus:border-wedding-gold transition-colors" placeholder="Ej. Camila Ferraro" required="" type="text"/>
-</div>
-<div>
-<label class="block text-[11px] uppercase tracking-widest text-wedding-bone/80 mb-2 font-medium">¿Asistirás a nuestra boda? *</label>
-<div class="grid grid-cols-2 gap-3">
-<label class="border border-white/20 rounded-xl p-3 flex items-center gap-2 cursor-pointer hover:border-wedding-gold transition-colors bg-black/20">
-<input checked="" class="accent-wedding-gold" name="asistencia" type="radio" value="si"/>
-<span class="text-xs">Sí, con alegría</span>
-</label>
-<label class="border border-white/20 rounded-xl p-3 flex items-center gap-2 cursor-pointer hover:border-wedding-gold transition-colors bg-black/20">
-<input class="accent-wedding-gold" name="asistencia" type="radio" value="no"/>
-<span class="text-xs">No podré asistir</span>
-</label>
-</div>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<div>
-<label class="block text-[11px] uppercase tracking-widest text-wedding-bone/80 mb-2 font-medium">Número de Pases</label>
-<select class="w-full bg-black/30 border border-white/20 rounded-xl px-4 py-3 text-xs text-wedding-bone focus:outline-none focus:border-wedding-gold transition-colors">
-<option value="1">1 Persona (Titular)</option>
-<option value="2">2 Personas (Con acompañante)</option>
-<option value="3">3 Personas</option>
-</select>
-</div>
-<div>
-<label class="block text-[11px] uppercase tracking-widest text-wedding-bone/80 mb-2 font-medium">Nombre Acompañante</label>
-<input class="w-full bg-black/30 border border-white/20 rounded-xl px-4 py-3 text-xs text-wedding-bone placeholder-wedding-bone/30 focus:outline-none focus:border-wedding-gold transition-colors" placeholder="Si aplica" type="text"/>
-</div>
-</div>
-<div>
-<label class="block text-[11px] uppercase tracking-widest text-wedding-bone/80 mb-2 font-medium">Restricciones Alimentarias / Menú</label>
-<select class="w-full bg-black/30 border border-white/20 rounded-xl px-4 py-3 text-xs text-wedding-bone focus:outline-none focus:border-wedding-gold transition-colors">
-<option value="estandar">Menú Tradicional Gourmet</option>
-<option value="vegetariano">Vegetariano</option>
-<option value="vegano">Vegano</option>
-<option value="celiaco">Celíaco / Libre de Gluten</option>
-<option value="hipertenso">Bajo en sodio</option>
-</select>
-</div>
-<div>
-<label class="block text-[11px] uppercase tracking-widest text-wedding-bone/80 mb-2 font-medium">Canción sugerida o dedicatoria</label>
-<textarea class="w-full bg-black/30 border border-white/20 rounded-xl p-4 text-xs text-wedding-bone placeholder-wedding-bone/30 focus:outline-none focus:border-wedding-gold transition-colors resize-none" placeholder="¿Qué canción te haría bailar toda la noche? Déjanos también tus buenos deseos..." rows="3"></textarea>
-</div>
-<button class="w-full bg-wedding-gold hover:bg-wedding-goldHover text-wedding-dark font-semibold text-xs tracking-[0.2em] uppercase py-4 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5 duration-200" type="submit">
-          Confirmar asistencia
-        </button>
-<p class="hidden text-center text-xs text-emerald-400 font-light pt-2" id="rsvpSuccess">
-          ✓ ¡Gracias! Tu confirmación ha sido guardada con éxito.
-        </p>
+<form class="bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-8 backdrop-blur-md space-y-5"
+      id="rsvpForm"
+      onsubmit="handleRSVP(event)">
+
+  <div>
+    <label class="block text-[11px] uppercase tracking-widest text-wedding-bone/80 mb-2 font-medium">
+      Nombre Completo *
+    </label>
+
+    <input
+      id="nombre"
+      name="nombre"
+      class="w-full bg-black/30 border border-white/20 rounded-xl px-4 py-3 text-xs text-wedding-bone placeholder-wedding-bone/30 focus:outline-none focus:border-wedding-gold transition-colors"
+      placeholder="Ej. Camila Ferraro"
+      required
+      type="text"
+    />
+  </div>
+
+  <div>
+    <label class="block text-[11px] uppercase tracking-widest text-wedding-bone/80 mb-2 font-medium">
+      ¿Asistirás a nuestra boda? *
+    </label>
+
+    <div class="grid grid-cols-2 gap-3">
+
+      <label class="border border-white/20 rounded-xl p-3 flex items-center gap-2 cursor-pointer hover:border-wedding-gold transition-colors bg-black/20">
+        <input
+          class="accent-wedding-gold"
+          name="asistencia"
+          type="radio"
+          value="si"
+          checked
+        />
+        <span class="text-xs">Sí, con alegría</span>
+      </label>
+
+      <label class="border border-white/20 rounded-xl p-3 flex items-center gap-2 cursor-pointer hover:border-wedding-gold transition-colors bg-black/20">
+        <input
+          class="accent-wedding-gold"
+          name="asistencia"
+          type="radio"
+          value="no"
+        />
+        <span class="text-xs">No podré asistir</span>
+      </label>
+
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+    <div>
+      <label class="block text-[11px] uppercase tracking-widest text-wedding-bone/80 mb-2 font-medium">
+        Número de Pases
+      </label>
+
+      <select
+        id="pases"
+        name="pases"
+        class="w-full bg-black/30 border border-white/20 rounded-xl px-4 py-3 text-xs text-wedding-bone focus:outline-none focus:border-wedding-gold transition-colors"
+      >
+        <option value="1">1 Persona (Titular)</option>
+        <option value="2">2 Personas (Con acompañante)</option>
+        <option value="3">3 Personas</option>
+      </select>
+    </div>
+
+    <div>
+      <label class="block text-[11px] uppercase tracking-widest text-wedding-bone/80 mb-2 font-medium">
+        Nombre Acompañante
+      </label>
+
+      <input
+        id="acompanante"
+        name="acompanante"
+        class="w-full bg-black/30 border border-white/20 rounded-xl px-4 py-3 text-xs text-wedding-bone placeholder-wedding-bone/30 focus:outline-none focus:border-wedding-gold transition-colors"
+        placeholder="Si aplica"
+        type="text"
+      />
+    </div>
+
+  </div>
+
+  <div>
+    <label class="block text-[11px] uppercase tracking-widest text-wedding-bone/80 mb-2 font-medium">
+      Restricciones Alimentarias / Menú
+    </label>
+
+    <select
+      id="menu"
+      name="menu"
+      class="w-full bg-black/30 border border-white/20 rounded-xl px-4 py-3 text-xs text-wedding-bone focus:outline-none focus:border-wedding-gold transition-colors"
+    >
+      <option value="estandar">Menú Tradicional Gourmet</option>
+      <option value="vegetariano">Vegetariano</option>
+      <option value="vegano">Vegano</option>
+      <option value="celiaco">Celíaco / Libre de Gluten</option>
+      <option value="hipertenso">Bajo en sodio</option>
+    </select>
+  </div>
+
+  <div>
+    <label class="block text-[11px] uppercase tracking-widest text-wedding-bone/80 mb-2 font-medium">
+      Canción sugerida o dedicatoria
+    </label>
+
+    <textarea
+      id="cancion"
+      name="cancion"
+      class="w-full bg-black/30 border border-white/20 rounded-xl p-4 text-xs text-wedding-bone placeholder-wedding-bone/30 focus:outline-none focus:border-wedding-gold transition-colors resize-none"
+      placeholder="¿Qué canción te haría bailar toda la noche? Déjanos también tus buenos deseos..."
+      rows="3"
+    ></textarea>
+  </div>
+
+  <button
+    class="w-full bg-wedding-gold hover:bg-wedding-goldHover text-wedding-dark font-semibold text-xs tracking-[0.2em] uppercase py-4 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5 duration-200"
+    type="submit"
+  >
+    Confirmar asistencia
+  </button>
+
+  <p
+    class="hidden text-center text-xs text-emerald-400 font-light pt-2"
+    id="rsvpSuccess"
+  >
+    ✓ ¡Gracias! Tu confirmación ha sido guardada con éxito.
+  </p>
+
 </form>
 </div>
 </section>
@@ -740,14 +818,53 @@
     }
 
     // Formulario RSVP
-    function handleRSVP(e) {
-      e.preventDefault();
-      const successMsg = document.getElementById('rsvpSuccess');
-      successMsg.classList.remove('hidden');
-      setTimeout(() => {
-        alert('¡Confirmación enviada! Valentina y Mateo han recibido tu respuesta con mucho amor.');
-      }, 300);
-    }
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwHLca6UX1LEmoLpWs5Codxye_UW-aAkpp5Wrz37s9vK9vYWxYyRYFAnXsiuON7xqvJbw/exec";
+
+async function handleRSVP(e) {
+
+  e.preventDefault();
+
+  const form = e.target;
+  const button = form.querySelector('button[type="submit"]');
+  const successMsg = document.getElementById("rsvpSuccess");
+
+  const data = new URLSearchParams({
+    nombre: document.getElementById("nombre").value,
+    asistencia: form.querySelector('input[name="asistencia"]:checked').value,
+    pases: document.getElementById("pases").value,
+    acompanante: document.getElementById("acompanante").value,
+    menu: document.getElementById("menu").value,
+    cancion: document.getElementById("cancion").value
+  });
+
+  button.disabled = true;
+  button.textContent = "Enviando...";
+
+  try {
+
+    await fetch(SCRIPT_URL, {
+      method: "POST",
+      mode: "no-cors",
+      body: data
+    });
+
+    successMsg.classList.remove("hidden");
+
+    button.textContent = "¡Confirmado!";
+
+    form.reset();
+
+  } catch (error) {
+
+    console.error(error);
+
+    button.disabled = false;
+    button.textContent = "Confirmar asistencia";
+
+    alert("No pudimos enviar tu confirmación. Inténtalo nuevamente.");
+
+  }
+}
 
     // Calendario
     function addToCalendar(type) {
