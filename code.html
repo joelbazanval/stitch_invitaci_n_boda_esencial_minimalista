@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nuestra Historia — Valentina &amp; Mateo</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            playfair: ['"Playfair Display"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            wedding: {
+              bone: '#FAF8F5',
+              surface: '#F4F0EA',
+              card: '#FFFFFF',
+              dark: '#1C1A17',
+              charcoal: '#2D2B27',
+              gold: '#C5A880',
+              goldHover: '#B29468',
+              taupe: '#968F85',
+              border: '#E8E3DC'
+            }
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .gold-shimmer {
+      background: linear-gradient(135deg, #DFCEB7 0%, #C5A880 50%, #A88656 100%);
+    }
+    .frosted-glass {
+      background: rgba(250, 248, 245, 0.82);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .dark-glass {
+      background: rgba(28, 26, 23, 0.75);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    /* Hide scrollbar for gallery swipe */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-wedding-bone text-wedding-charcoal font-sans antialiased selection:bg-wedding-gold selection:text-white pb-12">
+<!-- REPRODUCTOR FLOTANTE Y MENÚ RÁPIDO -->
+<header class="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-lg">
+<nav class="frosted-glass border border-wedding-border/80 shadow-lg shadow-black/5 rounded-full px-5 py-3 flex items-center justify-between transition-all duration-300">
+<a class="font-playfair italic text-lg tracking-wider text-wedding-dark font-semibold" href="#hero">
+        V &amp; M
+      </a>
+<div class="flex items-center space-x-4 sm:space-x-6 text-[11px] uppercase tracking-widest font-medium text-wedding-taupe">
+<a class="hover:text-wedding-dark transition-colors" href="#historia">Historia</a>
+<a class="hover:text-wedding-dark transition-colors" href="#evento">Detalles</a>
+<a class="hover:text-wedding-dark transition-colors" href="#cronograma">Itinerario</a>
+<a class="bg-wedding-dark text-wedding-bone px-3.5 py-1.5 rounded-full hover:bg-wedding-gold transition-colors text-[10px] tracking-widest font-semibold" href="#rsvp">RSVP</a>
+</div>
+<button class="w-8 h-8 rounded-full border border-wedding-border flex items-center justify-center text-wedding-charcoal hover:bg-wedding-surface transition-all text-xs" id="musicToggle" onclick="toggleAudio()" title="Música ambiental">
+<svg class="w-3.5 h-3.5 animate-pulse" fill="currentColor" id="musicIcon" viewbox="0 0 24 24">
+<path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path>
+</svg>
+</button>
+</nav>
+</header>
+<!-- 1. PORTADA CINEMATOGRÁFICA -->
+<section class="relative min-h-[96vh] flex flex-col justify-end items-center text-center pb-20 px-6 overflow-hidden" id="hero">
+<!-- Imagen de Fondo Hero -->
+<div class="absolute inset-0 z-0">
+<img alt="Valentina y Mateo - Boda Historia" class="w-full h-full object-cover object-center scale-105 transition-transform duration-1000 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1XFfK4yfZMLUbWxPaRIpOSrKtUxETLdY36VNegLoOJ1RO833Uzv0wRAnB5K74-oeZQBZ5oJfTIpW7P5mmW1rnXap6fn0GxWL5VBlu0ebgs1m0XziY264MbFfHOO5_NCRSy5Dwtwms7bPKUQNNZZN86h98F7QpIHqFuRXZMnTX4HKFs5iI1sxKWQoIpSe1Hfc_WnfcOuerjxJWh2iM2qmHXiO2q1ZJS1nfrcIpFQQMMlBxRFJvJJkynhIAmw"/>
+<!-- Gradientes cinematográficos multicapa -->
+<div class="absolute inset-0 bg-gradient-to-t from-wedding-dark via-wedding-dark/40 to-black/30"></div>
+<div class="absolute inset-0 bg-black/20 mix-blend-multiply"></div>
+</div>
+<!-- Contenido Hero -->
+<div class="relative z-10 max-w-xl mx-auto text-wedding-bone space-y-5 animate-fade-in">
+<div class="inline-flex items-center space-x-3 px-4 py-1.5 rounded-full border border-white/30 backdrop-blur-md bg-white/10 text-white text-[11px] tracking-[0.3em] uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-wedding-gold animate-ping"></span>
+<span>Nuestra Historia</span>
+</div>
+<h1 class="font-playfair text-5xl sm:text-7xl font-light tracking-tight text-white leading-none">
+        Valentina <span class="font-serif italic text-wedding-gold font-normal">&amp;</span> Mateo
+      </h1>
+<p class="text-xs sm:text-sm tracking-[0.25em] uppercase text-wedding-bone/90 font-light">
+        Sábado · 18 de Octubre de 2025 · Villa del Lago, Córdoba
+      </p>
+<div class="pt-6">
+<a class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-medium bg-wedding-bone text-wedding-dark px-8 py-3.5 rounded-full shadow-2xl hover:bg-wedding-gold hover:text-white transition-all transform hover:-translate-y-0.5 duration-300" href="#historia">
+<span>Entrar a nuestra historia</span>
+<svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</a>
+</div>
+</div>
+<!-- Indicador de audio sutil -->
+<div class="absolute bottom-4 left-6 z-10 text-[10px] uppercase tracking-widest text-wedding-bone/70 flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+<span>Clair de Lune — C. Debussy (Piano Master)</span>
+</div>
+</section>
+<!-- 2. NUESTRA HISTORIA (CAPÍTULOS NARRATIVOS) -->
+<section class="py-24 px-6 max-w-3xl mx-auto" id="historia">
+<div class="text-center space-y-3 mb-16">
+<span class="text-wedding-gold uppercase tracking-[0.3em] text-xs font-semibold">Capítulo I</span>
+<h2 class="font-playfair text-4xl sm:text-5xl text-wedding-dark font-normal">Cómo comenzó todo</h2>
+<div class="w-12 h-[1px] bg-wedding-gold mx-auto mt-4"></div>
+<p class="font-serif italic text-xl sm:text-2xl text-wedding-taupe max-w-md mx-auto pt-2">
+        "Dicen que los grandes amores no se buscan, se reconocen."
+      </p>
+</div>
+<!-- Imagen Destacada de Historia -->
+<div class="relative rounded-2xl overflow-hidden shadow-2xl border border-wedding-border mb-16 group">
+<img alt="Valentina &amp; Mateo - Complicidad" class="w-full aspect-[4/5] object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1XkV2lVPcOTpuVnDAgcJZ1fZxbPWIO26-7l565USKcfuTqD1ZClJUbI769oxnlcjaBOwB-8v9ACWI-on9cAABL32zBub7CqfcDqNibjXZob3VxnLsU7tqa3jbNoU--9SE8-5Xp4DuXCAnSkk6uItkSpD_UaeAYdBvzkeJ4AGnFAJl-XuwGayF4P1D5FzeqCOpbk1vRk4-Nyoeoct_rwna7zNIW6d8gQpj55E0G8e-8RNefOBY6mZNcIGA4P"/>
+<div class="absolute inset-0 bg-gradient-to-t from-wedding-dark/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 text-wedding-bone">
+<p class="text-[10px] uppercase tracking-[0.25em] text-wedding-gold mb-1">Otoño 2021 · Encuentro en Florencia</p>
+<p class="text-sm font-light leading-relaxed">
+          Una cafetería en Piazza Santo Spirito, dos libros compartidos y una conversación que comenzó una tarde de lluvia y nunca terminó.
+        </p>
+</div>
+</div>
+<!-- Timeline Narrativo Interactivo -->
+<div class="relative pl-8 border-l border-wedding-border space-y-12 my-12">
+<!-- Hito 1 -->
+<div class="relative group">
+<div class="absolute -left-[37px] top-1.5 w-4 h-4 rounded-full bg-wedding-bone border-2 border-wedding-gold group-hover:bg-wedding-gold transition-colors"></div>
+<span class="text-[10px] uppercase tracking-[0.25em] text-wedding-taupe font-semibold">Septiembre 2021</span>
+<h3 class="font-playfair text-2xl text-wedding-dark mt-0.5">El Comienzo</h3>
+<p class="text-xs sm:text-sm text-wedding-taupe font-light mt-1.5 leading-relaxed">
+          Nuestras miradas se cruzaron y el tiempo pareció detenerse. Una tarde de café se convirtió en paseos interminables junto al río Arno.
+        </p>
+</div>
+<!-- Hito 2 -->
+<div class="relative group">
+<div class="absolute -left-[37px] top-1.5 w-4 h-4 rounded-full bg-wedding-bone border-2 border-wedding-gold group-hover:bg-wedding-gold transition-colors"></div>
+<span class="text-[10px] uppercase tracking-[0.25em] text-wedding-taupe font-semibold">Julio 2023</span>
+<h3 class="font-playfair text-2xl text-wedding-dark mt-0.5">Nuestro Primer Gran Viaje</h3>
+<p class="text-xs sm:text-sm text-wedding-taupe font-light mt-1.5 leading-relaxed">
+          Recorrimos los acantilados de Positano en una vieja Vespa. Ahí supimos que ningún destino sería completo sin el otro como compañero de ruta.
+        </p>
+</div>
+<!-- Hito 3 -->
+<div class="relative group">
+<div class="absolute -left-[37px] top-1.5 w-4 h-4 rounded-full bg-wedding-bone border-2 border-wedding-gold group-hover:bg-wedding-gold transition-colors"></div>
+<span class="text-[10px] uppercase tracking-[0.25em] text-wedding-taupe font-semibold">Noviembre 2024</span>
+<h3 class="font-playfair text-2xl text-wedding-dark mt-0.5">El Día que Dijimos Sí</h3>
+<p class="text-xs sm:text-sm text-wedding-taupe font-light mt-1.5 leading-relaxed">
+          Bajo los cipreses de Val d'Orcia al caer el sol, entre lágrimas de emoción y un abrazo eterno, nos prometimos caminar juntos toda la vida.
+        </p>
+</div>
+<!-- Hito 4 -->
+<div class="relative group">
+<div class="absolute -left-[37px] top-1.5 w-4 h-4 rounded-full bg-wedding-gold border-2 border-wedding-dark"></div>
+<span class="text-[10px] uppercase tracking-[0.25em] text-wedding-gold font-bold">18 de Octubre 2025</span>
+<h3 class="font-playfair text-2xl text-wedding-dark font-semibold mt-0.5">Nuestra Boda</h3>
+<p class="text-xs sm:text-sm text-wedding-charcoal font-medium mt-1.5 leading-relaxed">
+          El instante en que consagramos nuestro pacto rodeados de nuestras personas favoritas en el mundo: ustedes.
+        </p>
+</div>
+</div>
+</section>
+<!-- 3. CUENTA REGRESIVA ELEGANTE -->
+<section class="bg-wedding-dark text-wedding-bone py-16 px-6 relative overflow-hidden">
+<div class="max-w-xl mx-auto text-center space-y-8 relative z-10">
+<div class="space-y-2">
+<span class="text-[11px] uppercase tracking-[0.3em] text-wedding-gold font-medium">Falta muy poco</span>
+<h3 class="font-playfair text-3xl sm:text-4xl font-light">Cuenta regresiva hacia el gran día</h3>
+</div>
+<!-- Contadores con microinteracción visual -->
+<div class="grid grid-cols-4 gap-2 sm:gap-4 max-w-md mx-auto">
+<div class="bg-white/5 border border-white/10 rounded-xl p-3 sm:p-4 backdrop-blur-sm">
+<span class="font-playfair text-3xl sm:text-4xl text-wedding-bone block font-light" id="cd-days">182</span>
+<span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-wedding-taupe">Días</span>
+</div>
+<div class="bg-white/5 border border-white/10 rounded-xl p-3 sm:p-4 backdrop-blur-sm">
+<span class="font-playfair text-3xl sm:text-4xl text-wedding-bone block font-light" id="cd-hours">14</span>
+<span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-wedding-taupe">Horas</span>
+</div>
+<div class="bg-white/5 border border-white/10 rounded-xl p-3 sm:p-4 backdrop-blur-sm">
+<span class="font-playfair text-3xl sm:text-4xl text-wedding-bone block font-light" id="cd-mins">38</span>
+<span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-wedding-taupe">Minutos</span>
+</div>
+<div class="bg-white/5 border border-white/10 rounded-xl p-3 sm:p-4 backdrop-blur-sm">
+<span class="font-playfair text-3xl sm:text-4xl text-wedding-gold block font-light" id="cd-secs">52</span>
+<span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-wedding-taupe">Segundos</span>
+</div>
+</div>
+<p class="text-xs font-light text-wedding-bone/70 tracking-wider">
+        Sábado 18 de Octubre de 2025 · 17:30 Horas
+      </p>
+</div>
+</section>
+<!-- 4. INFORMACIÓN DEL EVENTO -->
+<section class="py-24 px-6 max-w-4xl mx-auto" id="evento">
+<div class="text-center space-y-3 mb-16">
+<span class="text-wedding-gold uppercase tracking-[0.3em] text-xs font-semibold">Detalles Esenciales</span>
+<h2 class="font-playfair text-4xl sm:text-5xl text-wedding-dark font-normal">Dónde &amp; Cuándo</h2>
+<div class="w-12 h-[1px] bg-wedding-gold mx-auto mt-4"></div>
+<p class="text-xs text-wedding-taupe tracking-wider uppercase">Dos momentos inolvidables en una misma velada</p>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<!-- Ceremonia Religiosa -->
+<div class="bg-wedding-card border border-wedding-border rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[10px] tracking-[0.2em] uppercase font-bold text-wedding-gold">Paso 01</span>
+<div class="w-8 h-8 rounded-full bg-wedding-surface flex items-center justify-center text-wedding-gold">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M12 21l-8-18h16l-8 18z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+</div>
+</div>
+<h3 class="font-playfair text-2xl text-wedding-dark">Ceremonia Religiosa</h3>
+<p class="text-wedding-gold text-xs font-semibold tracking-wider uppercase mt-1 mb-4">17:30 Horas puntual</p>
+<div class="space-y-2 text-xs text-wedding-taupe leading-relaxed">
+<p class="font-medium text-wedding-charcoal">Parroquia Nuestra Señora de la Asunción</p>
+<p>Camino de los Olivos 420, Valle Escondido, Córdoba.</p>
+<p class="text-[11px] text-stone-500 italic pt-2">Recomendamos llegar 15 minutos antes para ubicarse cómodamente.</p>
+</div>
+</div>
+<div class="pt-8 flex flex-col sm:flex-row gap-3">
+<a class="flex-1 text-center text-xs uppercase tracking-widest font-semibold border border-wedding-dark text-wedding-dark py-3 px-4 rounded-xl hover:bg-wedding-dark hover:text-white transition-colors" href="https://maps.google.com" target="_blank">
+            Ver ubicación
+          </a>
+<button class="flex-1 text-center text-xs uppercase tracking-widest font-semibold bg-wedding-surface text-wedding-charcoal py-3 px-4 rounded-xl hover:bg-wedding-border transition-colors" onclick="addToCalendar('ceremonia')">
+            + Calendario
+          </button>
+</div>
+</div>
+<!-- Recepción & Fiesta -->
+<div class="bg-wedding-card border border-wedding-border rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[10px] tracking-[0.2em] uppercase font-bold text-wedding-gold">Paso 02</span>
+<div class="w-8 h-8 rounded-full bg-wedding-surface flex items-center justify-center text-wedding-gold">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+</div>
+</div>
+<h3 class="font-playfair text-2xl text-wedding-dark">Recepción, Cena &amp; Fiesta</h3>
+<p class="text-wedding-gold text-xs font-semibold tracking-wider uppercase mt-1 mb-4">19:30 Horas hasta el amanecer</p>
+<div class="space-y-2 text-xs text-wedding-taupe leading-relaxed">
+<p class="font-medium text-wedding-charcoal">Estancia Las Alondras</p>
+<p>Ruta Provincial S, Km 28, Villa del Lago, Córdoba.</p>
+<p class="text-[11px] text-stone-500 italic pt-2">Cóctel en jardines botánicos, banquete principal y fiesta nocturna.</p>
+</div>
+</div>
+<div class="pt-8 flex flex-col sm:flex-row gap-3">
+<a class="flex-1 text-center text-xs uppercase tracking-widest font-semibold border border-wedding-dark text-wedding-dark py-3 px-4 rounded-xl hover:bg-wedding-dark hover:text-white transition-colors" href="https://maps.google.com" target="_blank">
+            Ver ubicación
+          </a>
+<button class="flex-1 text-center text-xs uppercase tracking-widest font-semibold bg-wedding-surface text-wedding-charcoal py-3 px-4 rounded-xl hover:bg-wedding-border transition-colors" onclick="addToCalendar('fiesta')">
+            + Calendario
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. CRONOGRAMA INTERACTIVO -->
+<section class="py-20 px-6 bg-wedding-surface/60 border-y border-wedding-border/60" id="cronograma">
+<div class="max-w-3xl mx-auto">
+<div class="text-center space-y-3 mb-16">
+<span class="text-wedding-gold uppercase tracking-[0.3em] text-xs font-semibold">El tiempo del amor</span>
+<h2 class="font-playfair text-4xl sm:text-5xl text-wedding-dark font-normal">Cronograma del Día</h2>
+<div class="w-12 h-[1px] bg-wedding-gold mx-auto mt-4"></div>
+<p class="text-xs text-wedding-taupe tracking-wider">Acompáñanos en cada momento de esta noche mágica</p>
+</div>
+<!-- Tarjetas interactivas de cronograma con tabs o selector -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="bg-wedding-card p-6 rounded-xl border border-wedding-border shadow-xs hover:border-wedding-gold/80 transition-all group">
+<div class="flex justify-between items-center text-wedding-gold mb-3">
+<span class="font-serif italic text-lg">16:00 hs</span>
+<span class="text-[10px] tracking-widest uppercase font-bold text-wedding-taupe">Etapa 01</span>
+</div>
+<h4 class="font-playfair text-lg text-wedding-dark font-medium">Preparativos</h4>
+<p class="text-xs text-wedding-taupe mt-1 leading-relaxed">
+            La novia y sus damas en la suite; el novio y sus padrinos afinando los últimos detalles.
+          </p>
+</div>
+<div class="bg-wedding-card p-6 rounded-xl border border-wedding-border shadow-xs hover:border-wedding-gold/80 transition-all group">
+<div class="flex justify-between items-center text-wedding-gold mb-3">
+<span class="font-serif italic text-lg">17:30 hs</span>
+<span class="text-[10px] tracking-widest uppercase font-bold text-wedding-taupe">Etapa 02</span>
+</div>
+<h4 class="font-playfair text-lg text-wedding-dark font-medium">Ceremonia Religiosa</h4>
+<p class="text-xs text-wedding-taupe mt-1 leading-relaxed">
+            Entrada nupcial, bendición de anillos y la promesa de amor eterno ante nuestros afectos.
+          </p>
+</div>
+<div class="bg-wedding-card p-6 rounded-xl border border-wedding-border shadow-xs hover:border-wedding-gold/80 transition-all group">
+<div class="flex justify-between items-center text-wedding-gold mb-3">
+<span class="font-serif italic text-lg">18:45 hs</span>
+<span class="text-[10px] tracking-widest uppercase font-bold text-wedding-taupe">Etapa 03</span>
+</div>
+<h4 class="font-playfair text-lg text-wedding-dark font-medium">Sesión &amp; Cóctel</h4>
+<p class="text-xs text-wedding-taupe mt-1 leading-relaxed">
+            Música acústica en vivo, vino de honor, bocados de autor al atardecer en los jardines.
+          </p>
+</div>
+<div class="bg-wedding-card p-6 rounded-xl border border-wedding-border shadow-xs hover:border-wedding-gold/80 transition-all group">
+<div class="flex justify-between items-center text-wedding-gold mb-3">
+<span class="font-serif italic text-lg">20:30 hs</span>
+<span class="text-[10px] tracking-widest uppercase font-bold text-wedding-taupe">Etapa 04</span>
+</div>
+<h4 class="font-playfair text-lg text-wedding-dark font-medium">Recepción &amp; Cena</h4>
+<p class="text-xs text-wedding-taupe mt-1 leading-relaxed">
+            Banquete de tres pasos, maridaje de autor y los discursos más íntimos de nuestros seres queridos.
+          </p>
+</div>
+<div class="bg-wedding-card p-6 rounded-xl border border-wedding-border shadow-xs hover:border-wedding-gold/80 transition-all group">
+<div class="flex justify-between items-center text-wedding-gold mb-3">
+<span class="font-serif italic text-lg">22:30 hs</span>
+<span class="text-[10px] tracking-widest uppercase font-bold text-wedding-taupe">Etapa 05</span>
+</div>
+<h4 class="font-playfair text-lg text-wedding-dark font-medium">Vals de los Novios</h4>
+<p class="text-xs text-wedding-taupe mt-1 leading-relaxed">
+            Apertura oficial de la pista de baile con nuestra canción favorita y fuegos fríos.
+          </p>
+</div>
+<div class="bg-wedding-card p-6 rounded-xl border border-wedding-border shadow-xs hover:border-wedding-gold/80 transition-all group">
+<div class="flex justify-between items-center text-wedding-gold mb-3">
+<span class="font-serif italic text-lg">23:00 - 05:00 hs</span>
+<span class="text-[10px] tracking-widest uppercase font-bold text-wedding-taupe">Etapa 06</span>
+</div>
+<h4 class="font-playfair text-lg text-wedding-dark font-medium">Fiesta &amp; Brindis</h4>
+<p class="text-xs text-wedding-taupe mt-1 leading-relaxed">
+            DJ en vivo, barra libre con coctelería botánica, sorpresas a medianoche y fiesta sin fin.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. GALERÍA EDITORIAL AMPLIADA CON LIGHTBOX -->
+<section class="py-24 px-6 max-w-5xl mx-auto" id="galeria">
+<div class="text-center space-y-3 mb-14">
+<span class="text-wedding-gold uppercase tracking-[0.3em] text-xs font-semibold">Fragmentos de Nuestro Viaje</span>
+<h2 class="font-playfair text-4xl sm:text-5xl text-wedding-dark font-normal">Galería Editorial</h2>
+<div class="w-12 h-[1px] bg-wedding-gold mx-auto mt-4"></div>
+<p class="text-xs text-wedding-taupe tracking-wider">Toca cualquier fotografía para admirar cada recuerdo en alta resolución</p>
+</div>
+<!-- Filtros de Galería por Etapa -->
+<div class="flex justify-center flex-wrap gap-2 mb-10 text-[11px] tracking-widest uppercase font-medium">
+<button class="gallery-btn px-4 py-1.5 rounded-full bg-wedding-dark text-wedding-bone transition-all" data-category="todas" onclick="filterGallery('todas')">Todas</button>
+<button class="gallery-btn px-4 py-1.5 rounded-full bg-wedding-surface text-wedding-taupe hover:text-wedding-dark transition-all" data-category="viajes" onclick="filterGallery('viajes')">Viajes</button>
+<button class="gallery-btn px-4 py-1.5 rounded-full bg-wedding-surface text-wedding-taupe hover:text-wedding-dark transition-all" data-category="compromiso" onclick="filterGallery('compromiso')">Compromiso</button>
+<button class="gallery-btn px-4 py-1.5 rounded-full bg-wedding-surface text-wedding-taupe hover:text-wedding-dark transition-all" data-category="detalles" onclick="filterGallery('detalles')">Detalles</button>
+</div>
+<!-- Masonry Grid con 10 fotos editoriales -->
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4" id="galleryGrid">
+<!-- Foto 1: Hero vertical -->
+<div class="relative rounded-xl overflow-hidden cursor-pointer group shadow-sm" onclick="openLightbox('https://lh3.googleusercontent.com/aida/AEtjO1XkV2lVPcOTpuVnDAgcJZ1fZxbPWIO26-7l565USKcfuTqD1ZClJUbI769oxnlcjaBOwB-8v9ACWI-on9cAABL32zBub7CqfcDqNibjXZob3VxnLsU7tqa3jbNoU--9SE8-5Xp4DuXCAnSkk6uItkSpD_UaeAYdBvzkeJ4AGnFAJl-XuwGayF4P1D5FzeqCOpbk1vRk4-Nyoeoct_rwna7zNIW6d8gQpj55E0G8e-8RNefOBY6mZNcIGA4P', 'El abrazo del atardecer')">
+<img alt="Pareja Boda" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1XkV2lVPcOTpuVnDAgcJZ1fZxbPWIO26-7l565USKcfuTqD1ZClJUbI769oxnlcjaBOwB-8v9ACWI-on9cAABL32zBub7CqfcDqNibjXZob3VxnLsU7tqa3jbNoU--9SE8-5Xp4DuXCAnSkk6uItkSpD_UaeAYdBvzkeJ4AGnFAJl-XuwGayF4P1D5FzeqCOpbk1vRk4-Nyoeoct_rwna7zNIW6d8gQpj55E0G8e-8RNefOBY6mZNcIGA4P"/>
+<div class="absolute inset-0 bg-wedding-dark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 text-white text-xs">
+<span>El abrazo del atardecer</span>
+</div>
+</div>
+<!-- Foto 2: Horizontal -->
+<div class="relative rounded-xl overflow-hidden cursor-pointer group shadow-sm" onclick="openLightbox('https://lh3.googleusercontent.com/aida/AEtjO1XFfK4yfZMLUbWxPaRIpOSrKtUxETLdY36VNegLoOJ1RO833Uzv0wRAnB5K74-oeZQBZ5oJfTIpW7P5mmW1rnXap6fn0GxWL5VBlu0ebgs1m0XziY264MbFfHOO5_NCRSy5Dwtwms7bPKUQNNZZN86h98F7QpIHqFuRXZMnTX4HKFs5iI1sxKWQoIpSe1Hfc_WnfcOuerjxJWh2iM2qmHXiO2q1ZJS1nfrcIpFQQMMlBxRFJvJJkynhIAmw', 'Caminata en la Toscana')">
+<img alt="Boda Toscana" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1XFfK4yfZMLUbWxPaRIpOSrKtUxETLdY36VNegLoOJ1RO833Uzv0wRAnB5K74-oeZQBZ5oJfTIpW7P5mmW1rnXap6fn0GxWL5VBlu0ebgs1m0XziY264MbFfHOO5_NCRSy5Dwtwms7bPKUQNNZZN86h98F7QpIHqFuRXZMnTX4HKFs5iI1sxKWQoIpSe1Hfc_WnfcOuerjxJWh2iM2qmHXiO2q1ZJS1nfrcIpFQQMMlBxRFJvJJkynhIAmw"/>
+<div class="absolute inset-0 bg-wedding-dark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 text-white text-xs">
+<span>Caminata en la villa</span>
+</div>
+</div>
+<!-- Foto 3: Retrato Editorial -->
+<div class="relative rounded-xl overflow-hidden cursor-pointer group shadow-sm md:row-span-2" onclick="openLightbox('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&amp;w=1000&amp;auto=format&amp;fit=crop', 'Risas cómplices')">
+<img alt="Detalle Ramo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="absolute inset-0 bg-wedding-dark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 text-white text-xs">
+<span>Flores y texturas</span>
+</div>
+</div>
+<!-- Foto 4: Anillos & Papelería -->
+<div class="relative rounded-xl overflow-hidden cursor-pointer group shadow-sm" onclick="openLightbox('https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&amp;w=1000&amp;auto=format&amp;fit=crop', 'Alianzas y promesa')">
+<img alt="Alianzas" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="absolute inset-0 bg-wedding-dark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 text-white text-xs">
+<span>Alianzas y promesa</span>
+</div>
+</div>
+<!-- Foto 5: Banquete -->
+<div class="relative rounded-xl overflow-hidden cursor-pointer group shadow-sm" onclick="openLightbox('https://images.unsplash.com/photo-1532712938310-34cb3982ef74?q=80&amp;w=1000&amp;auto=format&amp;fit=crop', 'Mesa de celebración')">
+<img alt="Cena Nupcial" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="absolute inset-0 bg-wedding-dark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 text-white text-xs">
+<span>Mesa de celebración</span>
+</div>
+</div>
+<!-- Foto 6: Brindis -->
+<div class="relative rounded-xl overflow-hidden cursor-pointer group shadow-sm md:col-span-2" onclick="openLightbox('https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=1000&amp;auto=format&amp;fit=crop', 'Brindis de oro')">
+<img alt="Pareja abrazo" class="w-full aspect-[2/1] object-cover group-hover:scale-105 transition-transform duration-500" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="absolute inset-0 bg-wedding-dark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 text-white text-xs">
+<span>El sí definitivo</span>
+</div>
+</div>
+<!-- Foto 7: Detalles botánicos -->
+<div class="relative rounded-xl overflow-hidden cursor-pointer group shadow-sm" onclick="openLightbox('https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&amp;w=1000&amp;auto=format&amp;fit=crop', 'Arreglo botánico')">
+<img alt="Flores" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="absolute inset-0 bg-wedding-dark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 text-white text-xs">
+<span>Arreglo botánico</span>
+</div>
+</div>
+</div>
+</section>
+<!-- LIGHTBOX MODAL -->
+<div class="fixed inset-0 z-50 bg-black/90 hidden items-center justify-center p-4 backdrop-blur-md" id="lightboxModal" onclick="closeLightbox()">
+<div class="relative max-w-3xl w-full text-center" onclick="event.stopPropagation()">
+<button class="absolute -top-12 right-0 text-white hover:text-wedding-gold text-2xl font-light" onclick="closeLightbox()">✕ Cerrar</button>
+<img alt="Ampliación" class="max-h-[80vh] mx-auto rounded-lg shadow-2xl object-contain" id="lightboxImg" src=""/>
+<p class="text-wedding-bone text-sm mt-4 font-serif italic" id="lightboxCaption"></p>
+</div>
+</div>
+<!-- 7. DRESS CODE VISUAL -->
+<section class="py-20 px-6 bg-wedding-surface/40 border-y border-wedding-border/60">
+<div class="max-w-xl mx-auto text-center space-y-6">
+<span class="text-wedding-gold uppercase tracking-[0.3em] text-xs font-semibold">Elegancia &amp; Estilo</span>
+<h2 class="font-playfair text-4xl text-wedding-dark font-normal">Código de Vestimenta</h2>
+<div class="w-10 h-[1px] bg-wedding-gold mx-auto"></div>
+<div class="bg-wedding-card p-8 rounded-2xl border border-wedding-border space-y-6 shadow-xs">
+<div>
+<h3 class="font-playfair text-2xl text-wedding-dark font-medium">Formal Elegante / Black Tie Optional</h3>
+<p class="text-xs text-wedding-taupe mt-2 leading-relaxed max-w-md mx-auto">
+            Queremos que te sientas espectacular. Hombres de traje oscuro o esmoquin; mujeres con vestido largo o midi sofisticado.
+          </p>
+</div>
+<div class="pt-2 border-t border-wedding-border">
+<p class="text-[11px] uppercase tracking-widest text-wedding-taupe mb-4 font-medium">Paleta inspiradora recomendada</p>
+<div class="flex items-center justify-center gap-3">
+<div class="flex flex-col items-center gap-1.5">
+<span class="w-7 h-7 rounded-full bg-[#1C1A17] border border-stone-300 shadow-inner"></span>
+<span class="text-[9px] text-stone-500 uppercase">Negro</span>
+</div>
+<div class="flex flex-col items-center gap-1.5">
+<span class="w-7 h-7 rounded-full bg-[#3B3A36] border border-stone-300 shadow-inner"></span>
+<span class="text-[9px] text-stone-500 uppercase">Grafito</span>
+</div>
+<div class="flex flex-col items-center gap-1.5">
+<span class="w-7 h-7 rounded-full bg-[#7D7565] border border-stone-300 shadow-inner"></span>
+<span class="text-[9px] text-stone-500 uppercase">Oliva</span>
+</div>
+<div class="flex flex-col items-center gap-1.5">
+<span class="w-7 h-7 rounded-full bg-[#C5A880] border border-stone-300 shadow-inner"></span>
+<span class="text-[9px] text-stone-500 uppercase">Champagne</span>
+</div>
+<div class="flex flex-col items-center gap-1.5">
+<span class="w-7 h-7 rounded-full bg-[#E5DFD5] border border-stone-300 shadow-inner"></span>
+<span class="text-[9px] text-stone-500 uppercase">Arena</span>
+</div>
+</div>
+<p class="text-[10px] text-wedding-taupe italic mt-4">
+            * Rogamos reservar el color blanco y marfil exclusivamente para la novia.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. INFORMACIÓN PARA INVITADOS (TARJETAS GUÍA) -->
+<section class="py-24 px-6 max-w-4xl mx-auto">
+<div class="text-center space-y-3 mb-16">
+<span class="text-wedding-gold uppercase tracking-[0.3em] text-xs font-semibold">Tu Comodidad</span>
+<h2 class="font-playfair text-4xl sm:text-5xl text-wedding-dark font-normal">Información para Invitados</h2>
+<div class="w-12 h-[1px] bg-wedding-gold mx-auto mt-4"></div>
+<p class="text-xs text-wedding-taupe tracking-wider">Todo lo que necesitas saber para disfrutar la velada sin preocupaciones</p>
+</div>
+<div class="grid sm:grid-cols-2 gap-6">
+<!-- Hospedaje -->
+<div class="bg-wedding-card p-6 rounded-2xl border border-wedding-border shadow-xs hover:shadow-md transition-shadow space-y-3">
+<div class="w-10 h-10 rounded-full bg-wedding-surface flex items-center justify-center text-wedding-gold">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+</div>
+<h3 class="font-playfair text-xl text-wedding-dark font-medium">Hospedaje Sugerido</h3>
+<p class="text-xs text-wedding-taupe leading-relaxed">
+          Convenio exclusivo en <strong>Hotel Boutique Villa Serena</strong> y <strong>Resort del Lago</strong> con tarifa especial mencionando el código <em>"Boda Valentina &amp; Mateo"</em>.
+        </p>
+<a class="inline-block text-[11px] font-semibold text-wedding-gold uppercase tracking-wider hover:underline pt-1" href="#rsvp">
+          Consultar con nuestro wedding planner →
+        </a>
+</div>
+<!-- Estacionamiento & Traslados -->
+<div class="bg-wedding-card p-6 rounded-2xl border border-wedding-border shadow-xs hover:shadow-md transition-shadow space-y-3">
+<div class="w-10 h-10 rounded-full bg-wedding-surface flex items-center justify-center text-wedding-gold">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+</div>
+<h3 class="font-playfair text-xl text-wedding-dark font-medium">Estacionamiento &amp; Shuttles</h3>
+<p class="text-xs text-wedding-taupe leading-relaxed">
+          Estancia Las Alondras cuenta con valet parking y estacionamiento privado vigilado. Además, dispondremos de vans de traslado cada 45 minutos desde los hoteles recomendados.
+        </p>
+</div>
+<!-- Clima & Calzado -->
+<div class="bg-wedding-card p-6 rounded-2xl border border-wedding-border shadow-xs hover:shadow-md transition-shadow space-y-3">
+<div class="w-10 h-10 rounded-full bg-wedding-surface flex items-center justify-center text-wedding-gold">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+</div>
+<h3 class="font-playfair text-xl text-wedding-dark font-medium">Clima &amp; Jardines</h3>
+<p class="text-xs text-wedding-taupe leading-relaxed">
+          La recepción comenzará al atardecer en zonas de césped. Sugerimos calzado cómodo o protectores de tacón. Por la noche suele refrescar en las sierras; un chal liviano será perfecto.
+        </p>
+</div>
+<!-- Regla de Oro: Solo Adultos -->
+<div class="bg-wedding-card p-6 rounded-2xl border border-wedding-border shadow-xs hover:shadow-md transition-shadow space-y-3">
+<div class="w-10 h-10 rounded-full bg-wedding-surface flex items-center justify-center text-wedding-gold">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+</div>
+<h3 class="font-playfair text-xl text-wedding-dark font-medium">Una Noche para los Grandes</h3>
+<p class="text-xs text-wedding-taupe leading-relaxed">
+          Amamos a los niños, pero hemos reservado esta velada exclusivamente para adultos con el deseo de que todos los invitados puedan bailar y relajarse por completo.
+        </p>
+</div>
+</div>
+</section>
+<!-- 9. RSVP DETALLADO -->
+<section class="py-24 px-6 bg-wedding-dark text-wedding-bone relative overflow-hidden" id="rsvp">
+<!-- Luz ambiental sutil -->
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-wedding-gold/10 blur-3xl pointer-events-none"></div>
+<div class="max-w-xl mx-auto relative z-10">
+<div class="text-center space-y-3 mb-12">
+<span class="text-wedding-gold uppercase tracking-[0.3em] text-xs font-semibold">Confirmación</span>
+<h2 class="font-playfair text-4xl sm:text-5xl font-light">Queremos celebrar contigo</h2>
+<div class="w-12 h-[1px] bg-wedding-gold mx-auto mt-4"></div>
+<p class="text-xs sm:text-sm text-wedding-bone/70 max-w-md mx-auto pt-2">
+          Por favor, confírmanos tu presencia antes del <strong class="text-white">15 de Septiembre de 2025</strong> para organizar con amor cada detalle a tu medida.
+        </p>
+</div>
+<!-- Formulario RSVP -->
+<form class="bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-8 backdrop-blur-md space-y-5" id="rsvpForm" onsubmit="handleRSVP(event)">
+<div>
+<label class="block text-[11px] uppercase tracking-widest text-wedding-bone/80 mb-2 font-medium">Nombre Completo *</label>
+<input class="w-full bg-black/30 border border-white/20 rounded-xl px-4 py-3 text-xs text-wedding-bone placeholder-wedding-bone/30 focus:outline-none focus:border-wedding-gold transition-colors" placeholder="Ej. Camila Ferraro" required="" type="text"/>
+</div>
+<div>
+<label class="block text-[11px] uppercase tracking-widest text-wedding-bone/80 mb-2 font-medium">¿Asistirás a nuestra boda? *</label>
+<div class="grid grid-cols-2 gap-3">
+<label class="border border-white/20 rounded-xl p-3 flex items-center gap-2 cursor-pointer hover:border-wedding-gold transition-colors bg-black/20">
+<input checked="" class="accent-wedding-gold" name="asistencia" type="radio" value="si"/>
+<span class="text-xs">Sí, con alegría</span>
+</label>
+<label class="border border-white/20 rounded-xl p-3 flex items-center gap-2 cursor-pointer hover:border-wedding-gold transition-colors bg-black/20">
+<input class="accent-wedding-gold" name="asistencia" type="radio" value="no"/>
+<span class="text-xs">No podré asistir</span>
+</label>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-[11px] uppercase tracking-widest text-wedding-bone/80 mb-2 font-medium">Número de Pases</label>
+<select class="w-full bg-black/30 border border-white/20 rounded-xl px-4 py-3 text-xs text-wedding-bone focus:outline-none focus:border-wedding-gold transition-colors">
+<option value="1">1 Persona (Titular)</option>
+<option value="2">2 Personas (Con acompañante)</option>
+<option value="3">3 Personas</option>
+</select>
+</div>
+<div>
+<label class="block text-[11px] uppercase tracking-widest text-wedding-bone/80 mb-2 font-medium">Nombre Acompañante</label>
+<input class="w-full bg-black/30 border border-white/20 rounded-xl px-4 py-3 text-xs text-wedding-bone placeholder-wedding-bone/30 focus:outline-none focus:border-wedding-gold transition-colors" placeholder="Si aplica" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-[11px] uppercase tracking-widest text-wedding-bone/80 mb-2 font-medium">Restricciones Alimentarias / Menú</label>
+<select class="w-full bg-black/30 border border-white/20 rounded-xl px-4 py-3 text-xs text-wedding-bone focus:outline-none focus:border-wedding-gold transition-colors">
+<option value="estandar">Menú Tradicional Gourmet</option>
+<option value="vegetariano">Vegetariano</option>
+<option value="vegano">Vegano</option>
+<option value="celiaco">Celíaco / Libre de Gluten</option>
+<option value="hipertenso">Bajo en sodio</option>
+</select>
+</div>
+<div>
+<label class="block text-[11px] uppercase tracking-widest text-wedding-bone/80 mb-2 font-medium">Canción sugerida o dedicatoria</label>
+<textarea class="w-full bg-black/30 border border-white/20 rounded-xl p-4 text-xs text-wedding-bone placeholder-wedding-bone/30 focus:outline-none focus:border-wedding-gold transition-colors resize-none" placeholder="¿Qué canción te haría bailar toda la noche? Déjanos también tus buenos deseos..." rows="3"></textarea>
+</div>
+<button class="w-full bg-wedding-gold hover:bg-wedding-goldHover text-wedding-dark font-semibold text-xs tracking-[0.2em] uppercase py-4 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5 duration-200" type="submit">
+          Confirmar asistencia
+        </button>
+<p class="hidden text-center text-xs text-emerald-400 font-light pt-2" id="rsvpSuccess">
+          ✓ ¡Gracias! Tu confirmación ha sido guardada con éxito.
+        </p>
+</form>
+</div>
+</section>
+<!-- 10. LISTA DE REGALOS -->
+<section class="py-20 px-6 max-w-2xl mx-auto text-center">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-full bg-wedding-surface text-wedding-gold mx-auto flex items-center justify-center">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V4a2 2 0 10-2 2h2m0 13a2 2 0 01-2-2m2 2a2 2 0 002-2m-6-1h10a2 2 0 002-2v-4a2 2 0 00-2-2H6a2 2 0 00-2 2v4a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+</div>
+<h3 class="font-playfair text-3xl text-wedding-dark">Lista de Regalos</h3>
+<p class="font-serif italic text-lg sm:text-xl text-wedding-taupe max-w-md mx-auto">
+        "Tu presencia es nuestro mejor regalo."
+      </p>
+<p class="text-xs text-wedding-taupe leading-relaxed max-w-sm mx-auto">
+        Si de corazón deseas hacernos un obsequio, puedes colaborar con nuestra luna de miel en la Costa Amalfitana o consultar nuestra lista de deseos.
+      </p>
+<div class="pt-4 flex flex-col sm:flex-row justify-center gap-3">
+<button class="text-xs uppercase tracking-widest font-semibold bg-wedding-dark text-wedding-bone px-6 py-3.5 rounded-xl hover:bg-wedding-gold hover:text-wedding-dark transition-all" onclick="toggleGiftModal()">
+          Ver opciones de regalo &amp; Datos bancarios
+        </button>
+</div>
+</div>
+</section>
+<!-- MODAL DE DATOS BANCARIOS / REGALOS -->
+<div class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-4" id="giftModal" onclick="toggleGiftModal()">
+<div class="bg-wedding-card max-w-md w-full rounded-2xl p-6 border border-wedding-border shadow-2xl relative space-y-4 text-left" onclick="event.stopPropagation()">
+<div class="flex justify-between items-center pb-2 border-b border-wedding-border">
+<h4 class="font-playfair text-xl text-wedding-dark">Datos para Regalo</h4>
+<button class="text-stone-400 hover:text-wedding-dark" onclick="toggleGiftModal()">✕</button>
+</div>
+<p class="text-xs text-wedding-taupe">
+        Agradecemos con profunda gratitud tu gesto para ayudarnos a construir nuestros primeros pasos y recuerdos de viaje juntos.
+      </p>
+<div class="bg-wedding-surface p-4 rounded-xl space-y-2 text-xs">
+<div><strong class="text-wedding-charcoal">Banco:</strong> Banco Galicia / Santander</div>
+<div><strong class="text-wedding-charcoal">Titulares:</strong> Valentina &amp; Mateo</div>
+<div><strong class="text-wedding-charcoal">CBU:</strong> 0070123430004567891234</div>
+<div><strong class="text-wedding-charcoal">Alias:</strong> BODA.VALENTINA.MATEO</div>
+</div>
+<button class="w-full py-2.5 bg-wedding-dark text-wedding-bone rounded-lg text-xs tracking-wider uppercase font-medium hover:bg-wedding-gold transition-colors" onclick="navigator.clipboard.writeText('BODA.VALENTINA.MATEO'); alert('¡Alias copiado al portapapeles!')">
+        Copiar Alias al Portapapeles
+      </button>
+</div>
+</div>
+<!-- 11. CIERRE CINEMATOGRÁFICO -->
+<footer class="relative min-h-[70vh] flex flex-col justify-center items-center text-center px-6 overflow-hidden mt-16">
+<div class="absolute inset-0 z-0">
+<img alt="Valentina &amp; Mateo final" class="w-full h-full object-cover filter brightness-75 scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1XFfK4yfZMLUbWxPaRIpOSrKtUxETLdY36VNegLoOJ1RO833Uzv0wRAnB5K74-oeZQBZ5oJfTIpW7P5mmW1rnXap6fn0GxWL5VBlu0ebgs1m0XziY264MbFfHOO5_NCRSy5Dwtwms7bPKUQNNZZN86h98F7QpIHqFuRXZMnTX4HKFs5iI1sxKWQoIpSe1Hfc_WnfcOuerjxJWh2iM2qmHXiO2q1ZJS1nfrcIpFQQMMlBxRFJvJJkynhIAmw"/>
+<div class="absolute inset-0 bg-wedding-dark/60 backdrop-blur-[2px]"></div>
+</div>
+<div class="relative z-10 max-w-md mx-auto text-wedding-bone space-y-6">
+<div class="w-16 h-[1px] bg-wedding-gold mx-auto"></div>
+<p class="font-serif italic text-2xl sm:text-3xl text-wedding-bone font-light">
+        "Y esta historia continúa..."
+      </p>
+<div class="space-y-1">
+<h3 class="font-playfair text-4xl sm:text-5xl font-light text-white">Valentina &amp; Mateo</h3>
+<p class="text-xs uppercase tracking-[0.3em] text-wedding-gold">18 · 10 · 2025</p>
+</div>
+<p class="text-xs text-wedding-bone/70 font-light leading-relaxed max-w-xs mx-auto">
+        Gracias por ser los testigos principales del día más importante de nuestras vidas.
+      </p>
+<div class="pt-8">
+<a class="text-[10px] uppercase tracking-[0.25em] text-wedding-bone/60 hover:text-white transition-colors" href="#hero">
+          ↑ Volver al inicio
+        </a>
+</div>
+</div>
+</footer>
+<!-- SCRIPT DE INTERACTIVIDAD -->
+<script>
+    // Cuenta regresiva viva
+    const targetDate = new Date('2025-10-18T17:30:00').getTime();
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance > 0) {
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById('cd-days').innerText = days;
+        document.getElementById('cd-hours').innerText = hours;
+        document.getElementById('cd-mins').innerText = minutes;
+        document.getElementById('cd-secs').innerText = seconds;
+      }
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Toggle Audio
+    let isPlaying = false;
+    function toggleAudio() {
+      isPlaying = !isPlaying;
+      const icon = document.getElementById('musicIcon');
+      if (isPlaying) {
+        icon.classList.remove('animate-pulse');
+        icon.classList.add('text-wedding-gold');
+      } else {
+        icon.classList.add('animate-pulse');
+        icon.classList.remove('text-wedding-gold');
+      }
+    }
+
+    // Lightbox
+    function openLightbox(src, caption) {
+      document.getElementById('lightboxImg').src = src;
+      document.getElementById('lightboxCaption').innerText = caption;
+      const modal = document.getElementById('lightboxModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+    function closeLightbox() {
+      const modal = document.getElementById('lightboxModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Modal de Regalos
+    function toggleGiftModal() {
+      const modal = document.getElementById('giftModal');
+      modal.classList.toggle('hidden');
+      modal.classList.toggle('flex');
+    }
+
+    // Filtros de galería
+    function filterGallery(category) {
+      const buttons = document.querySelectorAll('.gallery-btn');
+      buttons.forEach(btn => {
+        if(btn.dataset.category === category) {
+          btn.classList.remove('bg-wedding-surface', 'text-wedding-taupe');
+          btn.classList.add('bg-wedding-dark', 'text-wedding-bone');
+        } else {
+          btn.classList.add('bg-wedding-surface', 'text-wedding-taupe');
+          btn.classList.remove('bg-wedding-dark', 'text-wedding-bone');
+        }
+      });
+    }
+
+    // Formulario RSVP
+    function handleRSVP(e) {
+      e.preventDefault();
+      const successMsg = document.getElementById('rsvpSuccess');
+      successMsg.classList.remove('hidden');
+      setTimeout(() => {
+        alert('¡Confirmación enviada! Valentina y Mateo han recibido tu respuesta con mucho amor.');
+      }, 300);
+    }
+
+    // Calendario
+    function addToCalendar(type) {
+      const title = type === 'ceremonia' ? 'Boda Valentina & Mateo - Ceremonia' : 'Boda Valentina & Mateo - Recepción & Fiesta';
+      const details = 'Celebración de la boda de Valentina y Mateo';
+      const location = type === 'ceremonia' ? 'Parroquia Nuestra Señora de la Asunción, Córdoba' : 'Estancia Las Alondras, Villa del Lago, Córdoba';
+      const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=20251018T203000Z/20251019T080000Z&details=${encodeURIComponent(details)}&location=${encodeURIComponent(location)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
