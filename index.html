@@ -79,42 +79,262 @@
 </button>
 </nav>
 </header>
+
 <!-- 1. PORTADA CINEMATOGRÁFICA -->
-<section class="relative min-h-[96vh] flex flex-col justify-end items-center text-center pb-20 px-6 overflow-hidden" id="hero">
+<section
+  class="relative min-h-[100svh] md:min-h-screen w-full flex flex-col justify-end items-center text-center pb-20 px-6 overflow-hidden"
+  id="hero"
+>
 <!-- Imagen de Fondo Hero -->
-<div class="absolute inset-0 z-0">
-<img alt="Valentina y Mateo - Boda Historia" class="w-full h-full object-cover object-center scale-105 transition-transform duration-1000 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1XFfK4yfZMLUbWxPaRIpOSrKtUxETLdY36VNegLoOJ1RO833Uzv0wRAnB5K74-oeZQBZ5oJfTIpW7P5mmW1rnXap6fn0GxWL5VBlu0ebgs1m0XziY264MbFfHOO5_NCRSy5Dwtwms7bPKUQNNZZN86h98F7QpIHqFuRXZMnTX4HKFs5iI1sxKWQoIpSe1Hfc_WnfcOuerjxJWh2iM2qmHXiO2q1ZJS1nfrcIpFQQMMlBxRFJvJJkynhIAmw"/>
+<div class="absolute inset-0 z-0 hero-bg">
+<img
+  alt="Valentina y Mateo - Boda Historia"
+  class="w-full h-full object-cover object-center scale-110 hero-image"
+  src="./wedd02.jpeg"
+/>
+
 <!-- Gradientes cinematográficos multicapa -->
-<div class="absolute inset-0 bg-gradient-to-t from-wedding-dark via-wedding-dark/40 to-black/30"></div>
-<div class="absolute inset-0 bg-black/20 mix-blend-multiply"></div>
+<div class="absolute inset-0 hero-overlay"></div>
 </div>
+
 <!-- Contenido Hero -->
-<div class="relative z-10 max-w-xl mx-auto text-wedding-bone space-y-5 animate-fade-in">
-<div class="inline-flex items-center space-x-3 px-4 py-1.5 rounded-full border border-white/30 backdrop-blur-md bg-white/10 text-white text-[11px] tracking-[0.3em] uppercase">
-<span class="w-1.5 h-1.5 rounded-full bg-wedding-gold animate-ping"></span>
+<div class="relative z-10 max-w-xl mx-auto text-wedding-bone space-y-5">
+
+<!-- Etiqueta -->
+<div class="inline-flex items-center space-x-3 px-4 py-1.5 rounded-full border border-white/30 backdrop-blur-md bg-white/10 text-white text-[11px] tracking-[0.3em] uppercase hero-label">
+
+<span class="w-1.5 h-1.5 rounded-full bg-wedding-gold hero-dot"></span>
+
 <span>Nuestra Historia</span>
+
 </div>
-<h1 class="font-playfair text-5xl sm:text-7xl font-light tracking-tight text-white leading-none">
-        Valentina <span class="font-serif italic text-wedding-gold font-normal">&amp;</span> Mateo
-      </h1>
-<p class="text-xs sm:text-sm tracking-[0.25em] uppercase text-wedding-bone/90 font-light">
-        Sábado · 18 de Octubre de 2025 · Villa del Lago, Córdoba
-      </p>
-<div class="pt-6">
-<a class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-medium bg-wedding-bone text-wedding-dark px-8 py-3.5 rounded-full shadow-2xl hover:bg-wedding-gold hover:text-white transition-all transform hover:-translate-y-0.5 duration-300" href="#historia">
+
+<!-- Nombres -->
+<h1 class="font-playfair text-5xl sm:text-7xl font-light tracking-tight text-white leading-none hero-title">
+  Valentina <span class="font-serif italic text-wedding-gold font-normal">&amp;</span> Mateo
+</h1>
+
+<!-- Fecha -->
+<p class="text-xs sm:text-sm tracking-[0.25em] uppercase text-wedding-bone/90 font-light hero-date">
+  Sábado · 18 de Octubre de 2025 · Villa del Lago, Córdoba
+</p>
+
+<!-- Botón -->
+<div class="pt-6 hero-button">
+<a
+  class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-medium bg-wedding-bone text-wedding-dark px-8 py-3.5 rounded-full shadow-2xl hover:bg-wedding-gold hover:text-white transition-all transform hover:-translate-y-0.5 duration-300"
+  href="#historia"
+>
 <span>Entrar a nuestra historia</span>
-<svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+
+<svg
+  class="w-4 h-4 animate-bounce"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  viewbox="0 0 24 24"
+>
 <path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
+
 </a>
 </div>
+
 </div>
+
 <!-- Indicador de audio sutil -->
-<div class="absolute bottom-4 left-6 z-10 text-[10px] uppercase tracking-widest text-wedding-bone/70 flex items-center gap-2">
+<div class="absolute bottom-4 left-6 z-10 text-[10px] uppercase tracking-widest text-wedding-bone/70 flex items-center gap-2 hero-audio">
 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
 <span>Clair de Lune — C. Debussy (Piano Master)</span>
 </div>
+
 </section>
+
+<!-- ANIMACIÓN CINEMATOGRÁFICA DEL HERO -->
+<style>
+
+.hero-image {
+  opacity: 1;
+  transform: scale(1.05);
+  animation: heroImageIn 2s cubic-bezier(.16,1,.3,1) both;
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 45%,
+    rgba(20, 20, 20, 0.15) 55%,
+    rgba(20, 20, 20, 0.55) 72%,
+    rgba(20, 20, 20, 0.90) 88%,
+    #1c1c1c 100%
+  );
+}
+
+.hero-label {
+  opacity: 0;
+  transform: translateX(-45px);
+  animation: heroLeftIn 1s cubic-bezier(.16,1,.3,1) 0.5s forwards;
+}
+
+.hero-title {
+  opacity: 0;
+  transform: translateX(55px);
+  animation: heroRightIn 1.15s cubic-bezier(.16,1,.3,1) 0.8s forwards;
+}
+
+.hero-date {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: heroUpIn 1s cubic-bezier(.16,1,.3,1) 1.2s forwards;
+}
+
+.hero-button {
+  opacity: 0;
+  transform: translateY(25px) scale(.96);
+  animation: heroButtonIn 1s cubic-bezier(.16,1,.3,1) 1.5s forwards;
+}
+
+.hero-audio {
+  opacity: 0;
+  transform: translateX(-15px);
+  animation: heroAudioIn 1s ease-out 1.9s forwards;
+}
+
+
+/* FOTO */
+@keyframes heroImageIn {
+
+  0% {
+    opacity: 0;
+    transform: scale(1.10);
+    filter: blur(6px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.05);
+    filter: blur(0);
+  }
+
+}
+
+
+/* GRADIENTE */
+@keyframes heroOverlayIn {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+
+
+/* IZQUIERDA */
+@keyframes heroLeftIn {
+
+  from {
+    opacity: 0;
+    transform: translateX(-45px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+
+
+/* DERECHA */
+@keyframes heroRightIn {
+
+  from {
+    opacity: 0;
+    transform: translateX(55px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+
+
+/* ABAJO */
+@keyframes heroUpIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+/* BOTÓN */
+@keyframes heroButtonIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(25px) scale(.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+}
+
+
+/* AUDIO */
+@keyframes heroAudioIn {
+
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+
+
+/* ACCESIBILIDAD */
+@media (prefers-reduced-motion: reduce) {
+
+  .hero-image,
+  .hero-overlay,
+  .hero-label,
+  .hero-title,
+  .hero-date,
+  .hero-button,
+  .hero-audio {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+
+}
+
+</style>
+
+
 <!-- 2. NUESTRA HISTORIA (CAPÍTULOS NARRATIVOS) -->
 <section class="py-24 px-6 max-w-3xl mx-auto" id="historia">
 <div class="text-center space-y-3 mb-16">
